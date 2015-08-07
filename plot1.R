@@ -7,12 +7,12 @@ subset_data$datetime <- paste(subset_data$Date, subset_data$Time)
 subset_data$datetime <- strptime(subset_data$datetime, "%Y-%m-%d %H:%M:%S")
 
 
-
 subset_data$Global_active_power <- as.numeric(subset_data$Global_active_power)
 
 
 
-hist(subset_data$Global_active_power, xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red",bty="n")
+hist(subset_data$Global_active_power, xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red")
+
 
 
 dev.copy(png, width = 480, height = 480, file = "plot1.png")

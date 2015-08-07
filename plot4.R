@@ -9,7 +9,6 @@ subset_data$datetime <- strptime(subset_data$datetime, "%Y-%m-%d %H:%M:%S")
 
 
 
-
 par(mfcol = c(2, 2))
 
 plot(subset_data$datetime, subset_data$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")

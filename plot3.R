@@ -25,5 +25,6 @@ lines(subset_data$datetime, subset_data$Sub_metering_3,col="blue")
 legend("topright", legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), lty=1, col=c("black","red","blue"))
 
 
+
 dev.copy(png, width = 480, height = 480, file = "plot3.png")
 dev.off()
